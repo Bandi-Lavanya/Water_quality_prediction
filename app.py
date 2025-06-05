@@ -8,7 +8,7 @@ from sklearn.model_selection import train_test_split
 app = Flask(__name__)
 
 # Load the machine learning model
-data = pd.read_csv(r"C:\Users\bandi\OneDrive\Documents\water_quality_prediction\water_potability.csv")
+data = pd.read_csv("water_potability.csv")
 data.dropna(inplace=True)
 selected_features = ['ph', 'Hardness', 'Solids', 'Chloramines', 'Sulfate', 
                      'Conductivity', 'Organic_carbon', 'Trihalomethanes', 'Turbidity']
